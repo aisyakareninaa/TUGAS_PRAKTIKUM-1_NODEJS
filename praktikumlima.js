@@ -24,7 +24,7 @@ app.listen(8005, () => {
 
 //end point Ganjil-Genap
 app.post("/ganjilgenap", (req,res) => {
-    let nilai = req.body.angka
+    let nilai = Number (req.body.angka)
     let angka=''    
    
 let status = ''
