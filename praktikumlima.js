@@ -27,6 +27,10 @@ app.post("/ganjilgenap", (req,res) => {
     let nilai = Number (req.body.angka)
     let angka=''    
    
+//end point Ganjil-Genap
+app.post("/ganjilgenap", (req,res) => {
+    let nilai = Number (req.body.nilai)    
+   
 let status = ''
     if (nilai%2==0) {
         status= "genap"
@@ -34,7 +38,7 @@ let status = ''
         status= "ganjil"
     } 
     let response = {
-        Angka:angka,
+        nilai: nilai,
         status:status 
     }
     res.json(response)
