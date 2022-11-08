@@ -49,4 +49,5 @@ app.post("/bmi",(req,res)=>{
         bmi: bmi,
         status: status
     }
+    res.json(response)
 })
